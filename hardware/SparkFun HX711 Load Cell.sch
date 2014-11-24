@@ -19800,8 +19800,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U1" library="Testing" deviceset="HX711" device="HX711" value="HX711"/>
 <part name="Q1" library="SparkFun-DiscreteSemi" deviceset="TRANSISTOR_PNP" device="MMBT4403" value="MMBT4403"/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R5" library="SparkFun-Resistors" deviceset="100OHM1/10W1%(0603)" device="" value="100"/>
-<part name="R6" library="SparkFun-Resistors" deviceset="100OHM1/10W1%(0603)" device="" value="100"/>
+<part name="R3" library="SparkFun-Resistors" deviceset="100OHM1/10W1%(0603)" device="" value="100"/>
+<part name="R4" library="SparkFun-Resistors" deviceset="100OHM1/10W1%(0603)" device="" value="100"/>
 <part name="C6" library="SparkFun-Capacitors" deviceset="10UF50V20%(1210)" device="" value="10uF"/>
 <part name="C7" library="SparkFun-Capacitors" deviceset="10UF50V20%(1210)" device="" value="10uF"/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -19811,13 +19811,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R3" library="SparkFun-Resistors" deviceset="10KOHM1/10W1%(0603)" device="0603" value="10K"/>
-<part name="R4" library="SparkFun-Resistors" deviceset="10KOHM1/10W1%(0603)" device="0603" value="10K"/>
+<part name="R2" library="SparkFun-Resistors" deviceset="10KOHM1/10W1%(0603)" device="0603" value="10K"/>
+<part name="R1" library="SparkFun-Resistors" deviceset="10KOHM1/10W1%(0603)" device="0603" value="10K"/>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="JP3" library="SparkFun-Connectors" deviceset="M04" device="PTH"/>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="R1" library="SparkFun-Resistors" deviceset="10KOHM1/10W1%(0603)" device="0603" value="10K"/>
+<part name="R5" library="SparkFun-Resistors" deviceset="10KOHM1/10W1%(0603)" device="0603" value="10K"/>
 <part name="SUPPLY6" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="SJ1" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NO" device="YES_SILK" value=""/>
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -19834,8 +19834,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <sheet>
 <plain>
 <text x="210.82" y="101.6" size="1.778" layer="97">VCC: 2.7-5.5V</text>
-<text x="142.24" y="68.58" size="1.778" layer="97">VBG = 1.25V</text>
-<text x="139.7" y="66.04" size="1.778" layer="97">AVDD = VBG(R1+R2)/R1</text>
+<text x="121.158" y="135.382" size="1.778" layer="97">VBG = 1.25V</text>
+<text x="64.262" y="129.286" size="1.778" layer="97">AVDD = VBG(R1+R2)/R1</text>
 <text x="180.34" y="121.92" size="1.778" layer="97">Default: Open - Data rate set to 80SPS</text>
 <text x="180.34" y="119.38" size="1.778" layer="97">Close jumper to set to 10SPS</text>
 <text x="48.26" y="124.46" size="1.778" layer="97">E+</text>
@@ -19848,8 +19848,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="38.1" y="116.84" size="1.778" layer="97">Green</text>
 <text x="22.86" y="127" size="1.778" layer="97">Common Load
 Cell Colors:</text>
-<text x="172.72" y="10.16" size="1.778" layer="97">N. Seidle</text>
-<text x="238.76" y="7.62" size="1.778" layer="97">v1.0</text>
+<text x="172.72" y="10.16" size="1.778" layer="94">N. Seidle</text>
+<text x="238.76" y="7.62" size="1.778" layer="94">v01</text>
+<text x="210.82" y="99.06" size="1.778" layer="97">IO: 2.7-5.5V</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -19864,32 +19865,32 @@ Cell Colors:</text>
 <instance part="U1" gate="U1" x="152.4" y="106.68"/>
 <instance part="Q1" gate="G$1" x="119.38" y="132.08" rot="MR0"/>
 <instance part="GND1" gate="1" x="195.58" y="93.98"/>
-<instance part="R5" gate="G$1" x="114.3" y="83.82"/>
-<instance part="R6" gate="G$1" x="114.3" y="71.12"/>
-<instance part="C6" gate="G$1" x="88.9" y="139.7"/>
+<instance part="R3" gate="G$1" x="114.3" y="83.82"/>
+<instance part="R4" gate="G$1" x="114.3" y="71.12"/>
+<instance part="C6" gate="G$1" x="104.14" y="144.78"/>
 <instance part="C7" gate="G$1" x="101.6" y="106.68"/>
 <instance part="GND2" gate="1" x="170.18" y="109.22"/>
-<instance part="SUPPLY2" gate="G$1" x="88.9" y="147.32"/>
-<instance part="GND3" gate="1" x="88.9" y="132.08"/>
+<instance part="SUPPLY2" gate="G$1" x="104.14" y="152.4"/>
+<instance part="GND3" gate="1" x="104.14" y="137.16"/>
 <instance part="SUPPLY3" gate="G$1" x="134.62" y="127"/>
 <instance part="SUPPLY4" gate="G$1" x="167.64" y="127"/>
 <instance part="SUPPLY1" gate="G$1" x="116.84" y="139.7"/>
 <instance part="GND4" gate="1" x="66.04" y="111.76"/>
-<instance part="R3" gate="G$1" x="111.76" y="101.6" rot="R90"/>
-<instance part="R4" gate="G$1" x="111.76" y="116.84" rot="R90"/>
+<instance part="R2" gate="G$1" x="111.76" y="101.6" rot="R90"/>
+<instance part="R1" gate="G$1" x="111.76" y="116.84" rot="R90"/>
 <instance part="GND5" gate="1" x="101.6" y="88.9"/>
 <instance part="JP3" gate="G$1" x="58.42" y="119.38"/>
 <instance part="GND6" gate="1" x="170.18" y="83.82"/>
 <instance part="SUPPLY5" gate="G$1" x="195.58" y="109.22"/>
-<instance part="R1" gate="G$1" x="177.8" y="134.62" rot="R90"/>
+<instance part="R5" gate="G$1" x="177.8" y="134.62" rot="R90"/>
 <instance part="SUPPLY6" gate="G$1" x="177.8" y="142.24"/>
 <instance part="SJ1" gate="G$1" x="177.8" y="119.38" rot="R90"/>
 <instance part="GND7" gate="1" x="177.8" y="109.22"/>
 <instance part="C1" gate="G$1" x="121.92" y="76.2"/>
-<instance part="C5" gate="G$1" x="78.74" y="139.7"/>
+<instance part="C5" gate="G$1" x="93.98" y="144.78"/>
 <instance part="C2" gate="G$1" x="124.46" y="93.98" rot="R90"/>
-<instance part="SUPPLY7" gate="G$1" x="78.74" y="147.32"/>
-<instance part="GND8" gate="1" x="78.74" y="132.08"/>
+<instance part="SUPPLY7" gate="G$1" x="93.98" y="152.4"/>
+<instance part="GND8" gate="1" x="93.98" y="137.16"/>
 <instance part="LOGO3" gate="G$1" x="177.8" y="66.04"/>
 <instance part="FID1" gate="G$1" x="243.84" y="43.18"/>
 <instance part="FID2" gate="G$1" x="238.76" y="43.18"/>
@@ -19913,7 +19914,7 @@ Cell Colors:</text>
 <segment>
 <pinref part="C6" gate="G$1" pin="2"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="88.9" y1="137.16" x2="88.9" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="142.24" x2="104.14" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="63.5" y1="121.92" x2="66.04" y2="121.92" width="0.1524" layer="91"/>
@@ -19933,7 +19934,7 @@ Cell Colors:</text>
 <wire x1="101.6" y1="93.98" x2="101.6" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="93.98" x2="116.84" y2="93.98" width="0.1524" layer="91"/>
 <junction x="116.84" y="93.98"/>
-<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="101.6" y1="93.98" x2="101.6" y2="91.44" width="0.1524" layer="91"/>
 <junction x="101.6" y="93.98"/>
@@ -19957,7 +19958,7 @@ Cell Colors:</text>
 <segment>
 <pinref part="C5" gate="G$1" pin="2"/>
 <pinref part="GND8" gate="1" pin="GND"/>
-<wire x1="78.74" y1="134.62" x2="78.74" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="139.7" x2="93.98" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -19976,7 +19977,7 @@ Cell Colors:</text>
 <segment>
 <pinref part="C6" gate="G$1" pin="1"/>
 <pinref part="SUPPLY2" gate="G$1" pin="VCC"/>
-<wire x1="88.9" y1="144.78" x2="88.9" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="149.86" x2="104.14" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="Q1" gate="G$1" pin="E"/>
@@ -19990,17 +19991,17 @@ Cell Colors:</text>
 <pinref part="SUPPLY5" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="R5" gate="G$1" pin="2"/>
 <pinref part="SUPPLY6" gate="G$1" pin="VCC"/>
 <wire x1="177.8" y1="139.7" x2="177.8" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="1"/>
 <pinref part="SUPPLY7" gate="G$1" pin="VCC"/>
-<wire x1="78.74" y1="147.32" x2="78.74" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="152.4" x2="93.98" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="DOUT" class="0">
+<net name="DAT" class="0">
 <segment>
 <pinref part="U1" gate="U1" pin="DOUT"/>
 <wire x1="165.1" y1="104.14" x2="198.12" y2="104.14" width="0.1524" layer="91"/>
@@ -20034,8 +20035,8 @@ Cell Colors:</text>
 <wire x1="111.76" y1="109.22" x2="111.76" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="109.22" x2="111.76" y2="109.22" width="0.1524" layer="91"/>
 <junction x="111.76" y="109.22"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="R1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -20061,7 +20062,7 @@ Cell Colors:</text>
 <wire x1="129.54" y1="114.3" x2="129.54" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="124.46" x2="116.84" y2="124.46" width="0.1524" layer="91"/>
 <junction x="101.6" y="124.46"/>
-<pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="JP3" gate="G$1" pin="4"/>
 <label x="68.58" y="124.46" size="1.778" layer="95"/>
 <wire x1="116.84" y1="124.46" x2="111.76" y2="124.46" width="0.1524" layer="91"/>
@@ -20072,7 +20073,7 @@ Cell Colors:</text>
 <net name="N$1" class="0">
 <segment>
 <pinref part="U1" gate="U1" pin="RATE"/>
-<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="165.1" y1="119.38" x2="170.18" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="SJ1" gate="G$1" pin="2"/>
 <wire x1="177.8" y1="129.54" x2="177.8" y2="127" width="0.1524" layer="91"/>
@@ -20088,7 +20089,7 @@ Cell Colors:</text>
 <wire x1="137.16" y1="93.98" x2="132.08" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="93.98" x2="132.08" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="83.82" x2="121.92" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="R3" gate="G$1" pin="2"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="121.92" y1="83.82" x2="119.38" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="81.28" x2="121.92" y2="83.82" width="0.1524" layer="91"/>
@@ -20101,7 +20102,7 @@ Cell Colors:</text>
 <wire x1="137.16" y1="88.9" x2="134.62" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="88.9" x2="134.62" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="71.12" x2="121.92" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="121.92" y1="71.12" x2="119.38" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="73.66" x2="121.92" y2="71.12" width="0.1524" layer="91"/>
@@ -20115,12 +20116,12 @@ Cell Colors:</text>
 <pinref part="JP3" gate="G$1" pin="2"/>
 <wire x1="93.98" y1="119.38" x2="63.5" y2="119.38" width="0.1524" layer="91"/>
 <label x="68.58" y="119.38" size="1.778" layer="95"/>
-<pinref part="R5" gate="G$1" pin="1"/>
+<pinref part="R3" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="A+" class="0">
 <segment>
-<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="109.22" y1="71.12" x2="91.44" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="71.12" x2="91.44" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="G$1" pin="1"/>
