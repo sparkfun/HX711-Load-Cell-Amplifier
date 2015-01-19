@@ -15,7 +15,7 @@
  based load cell which should allow a user to measure everything from a few grams to tens of tons.
 
  Arduino pin 2 -> HX711 CLK
- 3 -> DOUT
+ 3 -> DAT
  5V -> VCC
  GND -> GND
  
