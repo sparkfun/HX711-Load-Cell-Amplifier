@@ -21,9 +21,6 @@
  
  The HX711 board can be powered from 2.7V to 5V so the Arduino 5V power should be fine.
  
- TODO:
- Measure the current of the breakout board during measurements
- 
 */
 
 #include "HX711.h"

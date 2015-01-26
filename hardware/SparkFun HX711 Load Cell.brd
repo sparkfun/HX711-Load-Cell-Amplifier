@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -173,7 +173,8 @@
 <text x="19.685" y="4.445" size="1.27" layer="22" font="vector" ratio="15" rot="MR0">B-</text>
 <text x="3.048" y="5.715" size="1.27" layer="21" font="vector" ratio="15">YLW</text>
 <text x="9.398" y="5.715" size="1.27" layer="22" font="vector" ratio="15" rot="MR0">YLW/SD</text>
-<dimension x1="1.27" y1="6.35" x2="1.27" y2="0" x3="-8.89" y3="3.175" textsize="1.778" textratio="15" layer="47"/>
+<dimension x1="1.27" y1="6.35" x2="1.27" y2="0" x3="-8.89" y3="3.175" textsize="1.778" textratio="15" layer="47" unit="inch"/>
+<text x="1.27" y="-10.033" size="1.778" layer="47">Units are in inches</text>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors">
@@ -2059,9 +2060,6 @@ design rules under a new name.</description>
 <contactref element="JP1" pad="1"/>
 <contactref element="R5" pad="2"/>
 <contactref element="C5" pad="1"/>
-<wire x1="29.21" y1="15.24" x2="29.21" y2="16.51" width="0.508" layer="1"/>
-<wire x1="29.21" y1="16.51" x2="27.94" y2="17.78" width="0.508" layer="1"/>
-<wire x1="27.94" y1="17.78" x2="18.034" y2="17.78" width="0.508" layer="1"/>
 <wire x1="18.034" y1="17.78" x2="17.272" y2="17.78" width="0.508" layer="1"/>
 <wire x1="17.272" y1="17.78" x2="12.319" y2="17.78" width="0.508" layer="1"/>
 <wire x1="12.319" y1="17.78" x2="11.43" y2="17.78" width="0.508" layer="1"/>
@@ -2077,6 +2075,9 @@ design rules under a new name.</description>
 <wire x1="20.74" y1="15.24" x2="20.74" y2="13.335" width="0.508" layer="1"/>
 <wire x1="17.45" y1="20.32" x2="17.45" y2="17.958" width="0.508" layer="1"/>
 <wire x1="17.45" y1="17.958" x2="17.272" y2="17.78" width="0.508" layer="1"/>
+<wire x1="29.21" y1="15.24" x2="26.67" y2="15.24" width="0.508" layer="1"/>
+<wire x1="26.67" y1="15.24" x2="24.13" y2="17.78" width="0.508" layer="1"/>
+<wire x1="24.13" y1="17.78" x2="18.034" y2="17.78" width="0.508" layer="1"/>
 </signal>
 <signal name="DAT">
 <contactref element="U1" pad="12"/>

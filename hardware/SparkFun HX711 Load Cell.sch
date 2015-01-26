@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -139,7 +139,7 @@
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
-<schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
+<schematic xreflabel="%F%N/%S" xrefpart="/%S.%C%R">
 <libraries>
 <library name="SparkFun-Aesthetics">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
@@ -20923,16 +20923,19 @@ Cell Colors:</text>
 </plain>
 <instances>
 <instance part="U7" gate="G$1" x="132.08" y="12.7"/>
-<instance part="STANDOFF1" gate="G$1" x="243.84" y="38.1"/>
-<instance part="STANDOFF2" gate="G$1" x="238.76" y="38.1"/>
-<instance part="STANDOFF3" gate="G$1" x="233.68" y="38.1"/>
-<instance part="STANDOFF4" gate="G$1" x="228.6" y="38.1"/>
+<instance part="STANDOFF1" gate="G$1" x="246.38" y="33.02"/>
+<instance part="STANDOFF2" gate="G$1" x="241.3" y="33.02"/>
+<instance part="STANDOFF3" gate="G$1" x="236.22" y="33.02"/>
+<instance part="STANDOFF4" gate="G$1" x="231.14" y="33.02"/>
 <instance part="LOGO1" gate="G$1" x="60.96" y="2.54"/>
 <instance part="JP1" gate="G$1" x="205.74" y="104.14" rot="R180"/>
 <instance part="U1" gate="U1" x="154.94" y="106.68"/>
 <instance part="Q1" gate="G$1" x="121.92" y="132.08" rot="MR0"/>
 <instance part="GND1" gate="1" x="198.12" y="93.98"/>
-<instance part="R3" gate="G$1" x="116.84" y="83.82"/>
+<instance part="R3" gate="G$1" x="116.84" y="83.82" smashed="yes">
+<attribute name="NAME" x="119.634" y="84.328" size="1.778" layer="95"/>
+<attribute name="VALUE" x="114.808" y="80.518" size="1.778" layer="96"/>
+</instance>
 <instance part="R4" gate="G$1" x="116.84" y="71.12"/>
 <instance part="C6" gate="G$1" x="106.68" y="144.78"/>
 <instance part="C7" gate="G$1" x="101.6" y="116.84"/>
@@ -20956,14 +20959,14 @@ Cell Colors:</text>
 <instance part="SUPPLY7" gate="G$1" x="91.44" y="152.4"/>
 <instance part="GND8" gate="1" x="91.44" y="137.16"/>
 <instance part="LOGO3" gate="G$1" x="180.34" y="66.04"/>
-<instance part="FID1" gate="G$1" x="243.84" y="43.18"/>
-<instance part="FID2" gate="G$1" x="238.76" y="43.18"/>
+<instance part="FID1" gate="G$1" x="246.38" y="27.94"/>
+<instance part="FID2" gate="G$1" x="241.3" y="27.94"/>
 <instance part="JP2" gate="G$1" x="50.8" y="99.06"/>
 <instance part="SJ2" gate="G$1" x="180.34" y="119.38" rot="R90"/>
 <instance part="JP4" gate="G$1" x="50.8" y="119.38"/>
 <instance part="C3" gate="G$1" x="91.44" y="116.84"/>
 <instance part="GND6" gate="1" x="91.44" y="109.22"/>
-<instance part="GND9" gate="1" x="119.38" y="88.9"/>
+<instance part="GND9" gate="1" x="114.3" y="88.9"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="V" x="147.32" y="0"/>
 </instances>
@@ -21014,7 +21017,8 @@ Cell Colors:</text>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <pinref part="GND9" gate="1" pin="GND"/>
-<wire x1="119.38" y1="93.98" x2="119.38" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="91.44" x2="114.3" y2="93.98" width="0.1524" layer="91"/>
+<junction x="114.3" y="93.98"/>
 </segment>
 <segment>
 <pinref part="GND7" gate="1" pin="GND"/>
