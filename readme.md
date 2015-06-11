@@ -3,7 +3,7 @@ HX711 Load Cell Amplifier
 
 ![Amplifier Layout](https://cdn.sparkfun.com/assets/parts/1/0/3/9/5/13230-01.jpg)
 
-!*[SparkFun Load Cell Amplifier - HX711](https://www.sparkfun.com/products/13230)*
+-> *[SparkFun Load Cell Amplifier - HX711](https://www.sparkfun.com/products/13230)* <-
 
 
 The SparkFun Load Cell Amplifier is a small breakout board for the HX711 IC that allows you to easily read load cells to measure weight. By connecting the amplifier to your microcontroller you will be able to read the changes in the resistance of the load cell and with some calibration you’ll be able to get very accurate weight measurements. This can be handy for creating your own industrial scale, process control, or simple presence detection of an object.
@@ -22,6 +22,7 @@ The YLW pin acts as an optional input that is not hooked up to the strain gauge 
 Repository Contents
 -------------------
 
+* **/Production_Files** - Panelized version of the design for production
 * **/datasheets** - Datasheet for HX711 IC
 * **/firmware** - Example Arduino sketches
 * **/hardware** - All Eagle design files (.brd, .sch)
