@@ -13507,6 +13507,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 <package name="DUMMY">
 <description>NOTHING HERE!!! For when you want a symbol with no package as an option against symbols with a package.</description>
 </package>
+<package name="REVISION">
+<text x="0" y="0" size="1.778" layer="51" font="vector">Revision By: </text>
+</package>
 </packages>
 <symbols>
 <symbol name="DGND">
@@ -18327,6 +18330,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 <text x="-1.016" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="VDD" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
+<symbol name="REVISION">
+<text x="0" y="0" size="2.54" layer="94">Revision By: </text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" prefix="GND">
@@ -18582,6 +18588,18 @@ Standard 8.5x11 US Letter frame</description>
 </gates>
 <devices>
 <device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="REVISION">
+<gates>
+<gate name="G$1" symbol="REVISION" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="REVISION">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -21038,6 +21056,7 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <part name="SUPPLY9" library="SparkFun-Aesthetics" deviceset="VDD" device=""/>
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C4" library="SparkFun-Capacitors" deviceset="0.1UF-25V-5%(0603)" device="" value="0.1uF"/>
+<part name="U$1" library="SparkFun-Aesthetics" deviceset="REVISION" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -21064,8 +21083,6 @@ Cell Colors:</text>
 <wire x1="31.496" y1="127" x2="31.496" y2="113.03" width="0.2032" layer="97"/>
 <wire x1="31.496" y1="127" x2="35.56" y2="127" width="0.2032" layer="97"/>
 <wire x1="31.496" y1="113.03" x2="35.56" y2="113.03" width="0.2032" layer="97"/>
-<text x="148.59" y="7.112" size="2.54" layer="94">Revised by:</text>
-<text x="170.942" y="7.112" size="2.54" layer="94">A. Wende</text>
 <text x="213.36" y="104.14" size="1.778" layer="97">VDD: 2.7-5.5V</text>
 <text x="180.34" y="71.12" size="1.778" layer="97">VCC vs VDD:
 
@@ -21073,6 +21090,7 @@ VCC is the main supply voltage, while VDD sets the
 digital logic voltage reference and should be
 connected to microcontroller supply voltage, or
 shorted to VCC.</text>
+<text x="170.688" y="6.858" size="2.54" layer="94">Alex Wende</text>
 </plain>
 <instances>
 <instance part="U7" gate="G$1" x="132.08" y="12.7"/>
@@ -21130,6 +21148,7 @@ shorted to VCC.</text>
 <instance part="SUPPLY9" gate="VDD" x="78.74" y="152.4"/>
 <instance part="GND10" gate="1" x="78.74" y="137.16"/>
 <instance part="C4" gate="G$1" x="78.74" y="144.78"/>
+<instance part="U$1" gate="G$1" x="148.59" y="6.858"/>
 </instances>
 <busses>
 </busses>
@@ -21283,7 +21302,7 @@ shorted to VCC.</text>
 <pinref part="C2" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="AVDD" class="0">
+<net name="N$5" class="0">
 <segment>
 <pinref part="Q1" gate="G$1" pin="C"/>
 <wire x1="114.3" y1="121.92" x2="114.3" y2="124.46" width="0.1524" layer="91"/>
@@ -21402,7 +21421,7 @@ shorted to VCC.</text>
 <pinref part="C4" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="AVDD" class="0">
 <segment>
 <pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="86.36" y1="124.46" x2="86.36" y2="121.92" width="0.1524" layer="91"/>
