@@ -1955,7 +1955,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <attribute name="PROD_ID" value="CAP-08604" x="7.62" y="20.32" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
 </element>
 <element name="FRAME1" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="" x="-5.08" y="-19.05" smashed="yes">
-<attribute name="VERSION" value="v11" x="22.098" y="22.352" size="1.27" layer="16" font="vector" ratio="20" rot="SMR180"/>
+<attribute name="VERSION" value="v11" x="22.098" y="22.352" size="1.27" layer="16" font="vector" ratio="20" rot="MR180"/>
 <attribute name="DESIGNER" value="N. Seidle" x="25.4" y="-19.05" size="1.778" layer="51"/>
 </element>
 <element name="J1" library="SparkFun-Connectors" package="1X05" value="" x="29.21" y="16.51" rot="R270"/>
