@@ -31,7 +31,7 @@ Repository Contents
 Documentation
 --------------
 * **[Library](https://github.com/bogde/HX711)** - Arduino library for the HX711
-* **[Getting Started with Load Cells](https://learn.sparkfun.com/tutorials/getting-started-with-load-cells)**
+* **[Getting Started with Load Cells](https://learn.sparkfun.com/tutorials/getting-started-with-load-cells)** - Introduction to Load Cells
 * **[Hookup Guide](https://learn.sparkfun.com/tutorials/load-cell-amplifier-hx711-breakout-hookup-guide)** - Basic hookup guide for the Load Cell Amplifier
 
 License Information
