@@ -32,12 +32,13 @@
 #define DOUT  3
 #define CLK  2
 
-HX711 scale(DOUT, CLK);
+HX711 scale;
 
 void setup() {
   Serial.begin(9600);
   Serial.println("Demo of zeroing out a scale from a known value");
 
+  scale.begin(DOUT, CLK);
   scale.set_scale(calibration_factor); //This value is obtained by using the SparkFun_HX711_Calibration sketch
   scale.set_offset(zero_factor); //Zero out the scale using a previously known zero_factor
 

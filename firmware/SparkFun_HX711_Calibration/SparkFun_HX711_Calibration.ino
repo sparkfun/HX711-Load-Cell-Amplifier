@@ -38,7 +38,7 @@
 #define DOUT  3
 #define CLK  2
 
-HX711 scale(DOUT, CLK);
+HX711 scale;
 
 float calibration_factor = -7050; //-7050 worked for my 440lb max scale setup
 
@@ -50,6 +50,7 @@ void setup() {
   Serial.println("Press + or a to increase calibration factor");
   Serial.println("Press - or z to decrease calibration factor");
 
+  scale.begin(DOUT, CLK);
   scale.set_scale();
   scale.tare();	//Reset the scale to 0
 
