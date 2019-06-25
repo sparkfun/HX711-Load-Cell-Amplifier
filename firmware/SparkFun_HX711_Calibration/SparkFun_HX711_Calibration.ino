@@ -33,12 +33,12 @@
  
 */
 
-#include "HX711.h"
+#include "HX711.h" //This library can be obtained here http://librarymanager/All#Avia_HX711
 
-#define DOUT  3
-#define CLK  2
+#define LOADCELL_DOUT_PIN  3
+#define LOADCELL_SCK_PIN  2
 
-HX711 scale(DOUT, CLK);
+HX711 scale;
 
 float calibration_factor = -7050; //-7050 worked for my 440lb max scale setup
 
@@ -50,6 +50,7 @@ void setup() {
   Serial.println("Press + or a to increase calibration factor");
   Serial.println("Press - or z to decrease calibration factor");
 
+  scale.begin(LOADCELL_DOUT_PIN, LOADCELL_SCK_PIN);
   scale.set_scale();
   scale.tare();	//Reset the scale to 0
 
